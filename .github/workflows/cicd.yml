@@ -22,7 +22,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests
         run: |
-          if exist test.py ( python test.py )
+          if [ -f test.py ]; then python test.py; fi
       - name: Build Docker image
         run: |
           docker build -t typing-speed-game:latest .
