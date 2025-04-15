@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="progress-container"><div id="progress-bar"></div></div>
+        <div id="sentence-box"></div>
+        <textarea id="input-box" placeholder="Start typing here..." rows="3" disabled></textarea>
+        <div id="results" style="display: none;">
+            <span id="timer" class="stat">Time: 0s</span>
+            <span id="wpm" class="stat">WPM: 0</span>
+            <span id="accuracy" class="stat">Accuracy: 0%</span>
+        </div>
+        <div id="game-message"></div>
+        <button id="start-btn" class="game-btn">Start Game</button>
+        <button id="restart-btn" class="game-btn" style="display:none;">Play Again</button>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
