@@ -1,9 +1,0 @@
-# Netlify configuration for Flask app (using a proxy for local dev)
-[build]
-  publish = "static"
-  command = "echo 'Flask app, no build step'"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
